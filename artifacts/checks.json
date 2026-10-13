@@ -1,0 +1,41 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "fault_mismatches": {
+    "deny-all": [
+      "ordinary:resolved-identity-check",
+      "ordinary-upper:resolved-identity-check",
+      "unlisted-vault:resolved-identity-check"
+    ],
+    "skip-check": [
+      "blocked-0-exact:resolved-identity-check",
+      "blocked-0-upper:resolved-identity-check",
+      "blocked-0-swap:resolved-identity-check",
+      "blocked-1-exact:resolved-identity-check",
+      "blocked-1-upper:resolved-identity-check",
+      "blocked-1-swap:resolved-identity-check",
+      "blocked-2-exact:resolved-identity-check",
+      "blocked-2-upper:resolved-identity-check",
+      "blocked-2-swap:resolved-identity-check",
+      "blocked-3-exact:resolved-identity-check",
+      "blocked-3-upper:resolved-identity-check",
+      "blocked-3-swap:resolved-identity-check",
+      "blocked-4-exact:resolved-identity-check",
+      "blocked-4-upper:resolved-identity-check",
+      "blocked-4-swap:resolved-identity-check",
+      "blocked-5-exact:resolved-identity-check",
+      "blocked-5-upper:resolved-identity-check",
+      "blocked-5-swap:resolved-identity-check",
+      "blocked-6-exact:resolved-identity-check",
+      "blocked-6-upper:resolved-identity-check",
+      "blocked-6-swap:resolved-identity-check",
+      "blocked-7-exact:resolved-identity-check",
+      "blocked-7-upper:resolved-identity-check",
+      "blocked-7-swap:resolved-identity-check",
+      "mixed-record:resolved-identity-check",
+      "lastpass-lower:resolved-identity-check",
+      "whitespace:resolved-identity-check"
+    ]
+  },
+  "tests_run": 11
+}

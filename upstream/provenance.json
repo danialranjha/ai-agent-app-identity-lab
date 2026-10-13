@@ -1,0 +1,10 @@
+{
+  "repository": "iFurySt/open-codex-computer-use",
+  "commit": "8a3a7dec06402db2d760368cb24676ad3ba42c49",
+  "path": "packages/OpenComputerUseKit/Sources/OpenComputerUseKit/AppDiscovery.swift",
+  "source_git_blob": "88a533a3babd85892234acfed6bf415a14e63fe1",
+  "source_bytes": 20347,
+  "source_sha256": "3e83f8745dff44ba79bf063aaba734b7bf2388c3291a4e356330a1679799299f",
+  "snippet_sha256": "274144e6216dcaab546052336329c2665e26e2e84bd8d8aa1a5df859df72a0ae",
+  "extraction": "AppSafetyPolicy through isBlocked copied verbatim, closing brace added; permissionDenied omitted. Bundle-ID branch return expression from resolvedRunningApp copied verbatim into originalMatch. Foundation import and wrappers added. Descriptor is synthetic. No AppKit, launching, discovery, name lookup or UI action code is run."
+}

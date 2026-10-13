@@ -1,0 +1,800 @@
+{
+  "fixture_pairs": 33,
+  "groups": [
+    {
+      "family": "exact-blocked",
+      "original_captures": 0,
+      "pairs": 9,
+      "resolved_captures": 0
+    },
+    {
+      "family": "case-variant",
+      "original_captures": 18,
+      "pairs": 18,
+      "resolved_captures": 0
+    },
+    {
+      "family": "benign",
+      "original_captures": 2,
+      "pairs": 2,
+      "resolved_captures": 2
+    },
+    {
+      "family": "absent",
+      "original_captures": 0,
+      "pairs": 3,
+      "resolved_captures": 0
+    },
+    {
+      "family": "limitation",
+      "original_captures": 1,
+      "pairs": 1,
+      "resolved_captures": 1
+    }
+  ],
+  "rows": [
+    {
+      "family": "exact-blocked",
+      "id": "blocked-0-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.1password.1password",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-0-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.1password.1password",
+      "trace": [
+        "resolve:pid=100,id=com.1password.1password",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 100,
+      "family": "case-variant",
+      "id": "blocked-0-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.1PASSWORD.1PASSWORD",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=100,id=com.1password.1password",
+        "capture:pid=100"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-0-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.1PASSWORD.1PASSWORD",
+      "trace": [
+        "resolve:pid=100,id=com.1password.1password",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 100,
+      "family": "case-variant",
+      "id": "blocked-0-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.1PASSWORD.1PASSWORD",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=100,id=com.1password.1password",
+        "capture:pid=100"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-0-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.1PASSWORD.1PASSWORD",
+      "trace": [
+        "resolve:pid=100,id=com.1password.1password",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-1-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.1password.safari",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-1-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.1password.safari",
+      "trace": [
+        "resolve:pid=101,id=com.1password.safari",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 101,
+      "family": "case-variant",
+      "id": "blocked-1-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.1PASSWORD.SAFARI",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=101,id=com.1password.safari",
+        "capture:pid=101"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-1-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.1PASSWORD.SAFARI",
+      "trace": [
+        "resolve:pid=101,id=com.1password.safari",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 101,
+      "family": "case-variant",
+      "id": "blocked-1-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.1PASSWORD.SAFARI",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=101,id=com.1password.safari",
+        "capture:pid=101"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-1-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.1PASSWORD.SAFARI",
+      "trace": [
+        "resolve:pid=101,id=com.1password.safari",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-2-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.bitwarden.desktop",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-2-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.bitwarden.desktop",
+      "trace": [
+        "resolve:pid=102,id=com.bitwarden.desktop",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 102,
+      "family": "case-variant",
+      "id": "blocked-2-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.BITWARDEN.DESKTOP",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=102,id=com.bitwarden.desktop",
+        "capture:pid=102"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-2-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.BITWARDEN.DESKTOP",
+      "trace": [
+        "resolve:pid=102,id=com.bitwarden.desktop",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 102,
+      "family": "case-variant",
+      "id": "blocked-2-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.BITWARDEN.DESKTOP",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=102,id=com.bitwarden.desktop",
+        "capture:pid=102"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-2-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.BITWARDEN.DESKTOP",
+      "trace": [
+        "resolve:pid=102,id=com.bitwarden.desktop",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-3-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.dashlane.dashlanephonefinal",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-3-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.dashlane.dashlanephonefinal",
+      "trace": [
+        "resolve:pid=103,id=com.dashlane.dashlanephonefinal",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 103,
+      "family": "case-variant",
+      "id": "blocked-3-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.DASHLANE.DASHLANEPHONEFINAL",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=103,id=com.dashlane.dashlanephonefinal",
+        "capture:pid=103"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-3-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.DASHLANE.DASHLANEPHONEFINAL",
+      "trace": [
+        "resolve:pid=103,id=com.dashlane.dashlanephonefinal",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 103,
+      "family": "case-variant",
+      "id": "blocked-3-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.DASHLANE.DASHLANEPHONEFINAL",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=103,id=com.dashlane.dashlanephonefinal",
+        "capture:pid=103"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-3-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.DASHLANE.DASHLANEPHONEFINAL",
+      "trace": [
+        "resolve:pid=103,id=com.dashlane.dashlanephonefinal",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-4-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.lastpass.LastPass",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-4-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.lastpass.LastPass",
+      "trace": [
+        "resolve:pid=104,id=com.lastpass.LastPass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 104,
+      "family": "case-variant",
+      "id": "blocked-4-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.LASTPASS.LASTPASS",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=104,id=com.lastpass.LastPass",
+        "capture:pid=104"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-4-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.LASTPASS.LASTPASS",
+      "trace": [
+        "resolve:pid=104,id=com.lastpass.LastPass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 104,
+      "family": "case-variant",
+      "id": "blocked-4-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.LASTPASS.lASTpASS",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=104,id=com.lastpass.LastPass",
+        "capture:pid=104"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-4-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.LASTPASS.lASTpASS",
+      "trace": [
+        "resolve:pid=104,id=com.lastpass.LastPass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-5-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "com.nordsec.nordpass",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-5-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.nordsec.nordpass",
+      "trace": [
+        "resolve:pid=105,id=com.nordsec.nordpass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 105,
+      "family": "case-variant",
+      "id": "blocked-5-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.NORDSEC.NORDPASS",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=105,id=com.nordsec.nordpass",
+        "capture:pid=105"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-5-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.NORDSEC.NORDPASS",
+      "trace": [
+        "resolve:pid=105,id=com.nordsec.nordpass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 105,
+      "family": "case-variant",
+      "id": "blocked-5-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "COM.NORDSEC.NORDPASS",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=105,id=com.nordsec.nordpass",
+        "capture:pid=105"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-5-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "COM.NORDSEC.NORDPASS",
+      "trace": [
+        "resolve:pid=105,id=com.nordsec.nordpass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-6-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "me.proton.pass.electron",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-6-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "me.proton.pass.electron",
+      "trace": [
+        "resolve:pid=106,id=me.proton.pass.electron",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 106,
+      "family": "case-variant",
+      "id": "blocked-6-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "ME.PROTON.PASS.ELECTRON",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=106,id=me.proton.pass.electron",
+        "capture:pid=106"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-6-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "ME.PROTON.PASS.ELECTRON",
+      "trace": [
+        "resolve:pid=106,id=me.proton.pass.electron",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 106,
+      "family": "case-variant",
+      "id": "blocked-6-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "ME.PROTON.PASS.ELECTRON",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=106,id=me.proton.pass.electron",
+        "capture:pid=106"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-6-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "ME.PROTON.PASS.ELECTRON",
+      "trace": [
+        "resolve:pid=106,id=me.proton.pass.electron",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-7-exact",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "me.proton.pass.catalyst",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "blocked-7-exact",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "me.proton.pass.catalyst",
+      "trace": [
+        "resolve:pid=107,id=me.proton.pass.catalyst",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 107,
+      "family": "case-variant",
+      "id": "blocked-7-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "ME.PROTON.PASS.CATALYST",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=107,id=me.proton.pass.catalyst",
+        "capture:pid=107"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-7-upper",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "ME.PROTON.PASS.CATALYST",
+      "trace": [
+        "resolve:pid=107,id=me.proton.pass.catalyst",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 107,
+      "family": "case-variant",
+      "id": "blocked-7-swap",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "ME.PROTON.PASS.CATALYST",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=107,id=me.proton.pass.catalyst",
+        "capture:pid=107"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "blocked-7-swap",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "ME.PROTON.PASS.CATALYST",
+      "trace": [
+        "resolve:pid=107,id=me.proton.pass.catalyst",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 201,
+      "family": "case-variant",
+      "id": "mixed-record",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "com.1Password.1Password",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=201,id=COM.1PASSWORD.1PASSWORD",
+        "capture:pid=201"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "mixed-record",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.1Password.1Password",
+      "trace": [
+        "resolve:pid=201,id=COM.1PASSWORD.1PASSWORD",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 202,
+      "family": "case-variant",
+      "id": "lastpass-lower",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "com.lastpass.lastpass",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=202,id=com.lastpass.LastPass",
+        "capture:pid=202"
+      ]
+    },
+    {
+      "family": "case-variant",
+      "id": "lastpass-lower",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "com.lastpass.lastpass",
+      "trace": [
+        "resolve:pid=202,id=com.lastpass.LastPass",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 301,
+      "family": "benign",
+      "id": "ordinary",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "org.example.notes",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=301,id=org.example.notes",
+        "capture:pid=301"
+      ]
+    },
+    {
+      "capturedPID": 301,
+      "family": "benign",
+      "id": "ordinary",
+      "method": "resolved-identity-check",
+      "outcome": "captured",
+      "query": "org.example.notes",
+      "trace": [
+        "resolve:pid=301,id=org.example.notes",
+        "resolved-policy:allow",
+        "capture:pid=301"
+      ]
+    },
+    {
+      "capturedPID": 301,
+      "family": "benign",
+      "id": "ordinary-upper",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "ORG.EXAMPLE.NOTES",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=301,id=org.example.notes",
+        "capture:pid=301"
+      ]
+    },
+    {
+      "capturedPID": 301,
+      "family": "benign",
+      "id": "ordinary-upper",
+      "method": "resolved-identity-check",
+      "outcome": "captured",
+      "query": "ORG.EXAMPLE.NOTES",
+      "trace": [
+        "resolve:pid=301,id=org.example.notes",
+        "resolved-policy:allow",
+        "capture:pid=301"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "missing",
+      "method": "original-query-check",
+      "outcome": "not-found",
+      "query": "org.example.absent",
+      "trace": [
+        "query-policy:allow",
+        "resolve:none"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "missing",
+      "method": "resolved-identity-check",
+      "outcome": "not-found",
+      "query": "org.example.absent",
+      "trace": [
+        "resolve:none"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "suffix-lookalike",
+      "method": "original-query-check",
+      "outcome": "not-found",
+      "query": "com.1password.1password.extra",
+      "trace": [
+        "query-policy:allow",
+        "resolve:none"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "suffix-lookalike",
+      "method": "resolved-identity-check",
+      "outcome": "not-found",
+      "query": "com.1password.1password.extra",
+      "trace": [
+        "resolve:none"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "whitespace",
+      "method": "original-query-check",
+      "outcome": "denied",
+      "query": "  com.1password.1password\n",
+      "trace": [
+        "query-policy:deny"
+      ]
+    },
+    {
+      "family": "exact-blocked",
+      "id": "whitespace",
+      "method": "resolved-identity-check",
+      "outcome": "denied",
+      "query": "  com.1password.1password\n",
+      "trace": [
+        "resolve:pid=101,id=com.1password.1password",
+        "resolved-policy:deny"
+      ]
+    },
+    {
+      "capturedPID": 401,
+      "family": "limitation",
+      "id": "unlisted-vault",
+      "method": "original-query-check",
+      "outcome": "captured",
+      "query": "org.example.unlistedvault",
+      "trace": [
+        "query-policy:allow",
+        "resolve:pid=401,id=org.example.unlistedvault",
+        "capture:pid=401"
+      ]
+    },
+    {
+      "capturedPID": 401,
+      "family": "limitation",
+      "id": "unlisted-vault",
+      "method": "resolved-identity-check",
+      "outcome": "captured",
+      "query": "org.example.unlistedvault",
+      "trace": [
+        "resolve:pid=401,id=org.example.unlistedvault",
+        "resolved-policy:allow",
+        "capture:pid=401"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "nil-identity",
+      "method": "original-query-check",
+      "outcome": "not-found",
+      "query": "org.example.absent",
+      "trace": [
+        "query-policy:allow",
+        "resolve:none"
+      ]
+    },
+    {
+      "family": "absent",
+      "id": "nil-identity",
+      "method": "resolved-identity-check",
+      "outcome": "not-found",
+      "query": "org.example.absent",
+      "trace": [
+        "resolve:none"
+      ]
+    }
+  ],
+  "scope": "Pinned Swift string-policy/resolution slices with synthetic records; no desktop or model"
+}
